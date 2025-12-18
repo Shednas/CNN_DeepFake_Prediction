@@ -1,0 +1,63 @@
+
+======================================================================
+DEEPFAKE DETECTION ANALYSIS REPORT
+Generated: 2025-12-18 08:17:38
+======================================================================
+
+IMAGE INFORMATION
+-----------------
+File: a.jpg
+Size: (3840, 2160)
+
+PREDICTION RESULT
+-----------------
+Classification: REAL
+Confidence: 97.20%
+
+Probability Breakdown:
+  AI-Generated: 2.80%
+  Real Image:   97.20%
+
+CONFIDENCE ANALYSIS
+-------------------
+Level: VERY HIGH (>85%)
+Assessment: Strong evidence for Real
+
+IMAGE CHARACTERISTICS
+---------------------
+Contrast Level: 52.26 
+  (Medium)
+
+Edge Definition: 17.440
+  (Sharp)
+
+Color Entropy: 5.075
+  (Diverse)
+
+Mean Color (RGB):
+  R=136, G=103, B=69
+
+MODEL INTERPRETATION
+--------------------
+The model detected natural image characteristics:
+- Realistic noise patterns
+- Natural color gradients
+- Coherent lighting physics
+- Expected statistical properties
+
+Recommendation: Image appears authentic
+
+METHODOLOGY NOTES
+-----------------
+Model: Convolutional Neural Network (CNN)
+Architecture: 3-layer CNN with 128x128 RGB input
+Training Data: Balanced dataset of real and AI-generated images
+
+DISCLAIMER
+----------
+This analysis is based on machine learning patterns and should not be
+considered definitive proof. For critical applications, combine with
+manual review and additional verification methods.
+AI detection accuracy depends on training data quality and may have
+limitations on novel or out-of-distribution images.
+======================================================================

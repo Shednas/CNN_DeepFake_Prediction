@@ -61,7 +61,7 @@ Requirements:
 ## Dataset Structure
 
 ```
-CNNTestModel/dataset/
+CNN_DeepFake_Prediction/dataset/
 ├── train/
 │   ├── ai_generated/
 │   └── real/
@@ -76,12 +76,12 @@ CNNTestModel/dataset/
 ## Training
 
 ```bash
-python CNNTestModel/script/train.py
+python CNN_DeepFake_Prediction/script/train.py
 ```
 
 Outputs:
 
-* Trained model: `CNNTestModel/model/cnn_model.pth`
+* Trained model: `CNN_DeepFake_Prediction/model/cnn_model.pth`
 * Training history: `training_history.pkl`
 
 ---
@@ -89,7 +89,7 @@ Outputs:
 ## Testing
 
 ```bash
-python CNNTestModel/script/test.py
+python CNN_DeepFake_Prediction/script/test.py
 ```
 
 Produces accuracy, per-class precision/recall/F1-score, and a confusion matrix on the test dataset.
@@ -105,16 +105,16 @@ Typical performance on a balanced dataset of 2,250 images:
 Place image(s) in:
 
 ```
-CNNTestModel/dataset/toBePredicted/
+CNN_DeepFake_Prediction/dataset/toBePredicted/
 ```
 
 Run:
 
 ```bash
-python CNNTestModel/visualization/deepfake_detector.py
+python CNN_DeepFake_Prediction/visualization/deepfake_detector.py
 ```
 
-Generated outputs (saved to `CNNTestModel/results/`):
+Generated outputs (saved to `CNN_DeepFake_Prediction/results/`):
 
 * Text-based analysis report
 * High-resolution (300 DPI) visualization dashboard
@@ -127,7 +127,7 @@ A lightweight Streamlit application is provided for interactive use:
 
 ```bash
 pip install streamlit
-streamlit run CNNTestModel/visualization/streamlit_app.py
+streamlit run CNN_DeepFake_Prediction/visualization/streamlit_app.py
 ```
 
 Features include image upload, real-time prediction, and downloadable reports.
@@ -138,16 +138,14 @@ Features include image upload, real-time prediction, and downloadable reports.
 
 ```
 CNN_DeepFake_Prediction/
-├── CNNTestModel/
-│   ├── dataset/
-│   ├── script/
-│   ├── visualization/
-│   ├── model/
-│   ├── results/
-│   ├── utils/
-│   └── README.md
-├── web_app/
-├── requirements.txt
+├── dataset/
+├── script/
+├── visualization/
+├── model/
+├── results/
+├── utils/
+├── README.md
+└── LICENSE
 └── README.md
 ```
 
